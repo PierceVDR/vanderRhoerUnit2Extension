@@ -8,6 +8,8 @@ public class CalculatorRunner {
         System.out.print("Enter an expression with: *, /, +, -, %, or ^: ");
         String input = scan.nextLine();
 
+        scan.close();
+
         int spaceIdx = input.indexOf(" ");
         double a = Double.parseDouble( input.substring( 0, spaceIdx ) );
         String op = input.substring( spaceIdx+1,spaceIdx+2 );
